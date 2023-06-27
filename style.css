@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo';
+
+}
+/* @media screen and (max-width: 482px) {
+  .carousel.pointer-event {
+    touch-action: pan-y;
+    width: 85%;
+    margin: auto;
+    border-radius: 27px;
+    overflow: hidden;
+    height: 464px;
+}
+.w-s {
+  width: 260%!important;
+  height: 63vh;
+  right: 236px;
+  position: relative;
+}
+} */
+.topBar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+.account{
+    width: 38px;
+}
+.bars{
+    width: 38px;
+    font-size: 29px;
+    margin: 0 8px;
+}
+.like {
+    width: 38px;
+    font-size: 29px;
+}
+i.fa-solid.fa-toggle-on {
+    font-size: 29px;
+}
+.account img {
+    width: 100%;
+    border-radius: 50%;
+}
+.topBar {
+  padding: 3px 13px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.d1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+ul#UlRes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+li.List-Navbar {
+  display: block;
+  margin: 0 15px;
+  font-family: 'Cairo';
+}
+li.List-Navbar a {
+    text-decoration: none;
+    color: black;
+}
+.slidImg {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 788px) {
+  .list{
+    display: none
+  }
+}
+.slidImg {
+  background-image: url(n0.jpg);
+  width: 90%;
+  margin: auto;
+  height: 87vh;
+  background-size: cover;
+  text-align: end;
+  border-radius: 23px;
+  box-shadow: 0px 1px 5px 0px black;
+  background-position-x: center;
+  transition: .8s;
+}
+.mainImg {
+  width: 100%;
+  margin: 148px 25px;
+}
+.ci h2 {
+  font-size: 51px;
+  font-family: 'Cairo';
+}
+.ci h5 {
+  font-size: 20px;
+  font-family: 'Cairo';
+}
+.ci p {
+  font-family: 'Cairo';
+  margin: 0px 0px 31px 0;
+}
+.ci a{
+  background: green;
+  padding: 11px;
+  font-family: 'Cairo';
+  color: #fff;
+  border-radius: 16px;
+  text-decoration: none;
+}
+.intr {
+  text-align: center;
+  width: 100%;
+  padding: 196px 0px;
+  font-size: 50px;
+}
+/* .contaner_information_bookings.floaty {
+  position: absolute;
+  bottom: 16px;
+  text-align: center;
+  background: aliceblue;
+  width: 63%;
+  margin: 0 21%;
+  border-radius: 14px;
+  padding: 7px 0;
+  box-shadow: 0px 3px 6px 0px black;
+} */
+.contaner_information_bookings.floaty {
+  position: absolute;
+  text-align: center;
+  background: aliceblue;
+  width: 63%;
+  margin: -111px 21%;
+  border-radius: 14px;
+  z-index: 1000;
+  padding: 7px 0;
+  box-shadow: 0px 3px 6px 0px black;
+}
+.speed-shert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.speed-shert li {
+  margin: 0 12px;
+  display: block;
+}
+.speed-shert li a {
+  text-decoration: none;
+  color: black;
+}
+.speed-shert {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid #0000006b;
+  margin: 0 0 11px 0;
+  padding: 0px 0px 9px 0px;
+  font-family: 'Cairo';
+}
+.info_cip {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  font-family: 'Cairo';
+}
+li.Ii-bookings {
+  display: block;
+  text-align: end;
+}
+.icon-cip{
+  margin: 0px 0 0 10px;
+}
+
+@media screen and (max-width: 788px) {
+  .contaner_information_bookings.floaty {
+    position: relative;
+    margin: -200px auto;
+    width: 87%;
+    z-index: 11;
+}
+  .info_cip {
+    display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  font-family: 'Cairo';
+  padding: 0px 26px;
+}
+.slidImg {
+  height: 90vh;
+}
+.ci h2 {
+  font-size: 37px;
+}
+.ci p {
+  font-size: 14px;
+}
+}
+@media screen and (max-width: 500px) {
+  .contaner_information_bookings.floaty {
+    position: relative;
+    margin: -135px auto;
+    width: 87%;
+    z-index: 11;
+}
+.info_cip {
+  padding: 0px 22px;
+}
+}
+.d-main {
+  margin: 8px 0 37px 52px;
+  color: white;
+}
+h5 {
+  color: white;
+}
+a.M-B {
+  background: green;
+  color: #3FFF;
+  position: relative;
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  z-index: 11;
+  cursor: pointer;
+}
+.carousel.pointer-event {
+  touch-action: pan-y;
+  width: 85%;
+  margin: auto;
+  border-radius: 14px;
+  overflow: hidden;
+}

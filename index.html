@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6c84e23e68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>index</title>
+</head>
+<body>
+
+    <div class="topBar">
+       <div class="d1">
+        <div class="account"><img src="Profilimg.jpg" alt=""></div>
+        <div class="bars"><i class="fa-solid fa-bell" title="الاشعارات"> </i></div>
+        <div class="like"><i class="fa-solid fa-heart-pulse" title="المفضلات"></i></div>
+        <!-- ----------القائمة الرئيسيه-------------- -->
+    </div>
+    <div class="list" id="List">
+        <ul id="UlRes">
+            <li class="List-Navbar"><a onclick="Remov_Navbar(x)" href="#hospitals">المستشفيات</a></li>
+            <li class="List-Navbar"><a onclick="Remov_Navbar(x)" href="#bloodBank">بنك الدم</a></li>
+            <li class="List-Navbar"><a onclick="Remov_Navbar(x)" href="">الصحة العامة</a></li>
+            <li class="List-Navbar"><a onclick="Remov_Navbar(x)" href="#complaint">تقديم شكوى</a></li>
+            <li class="List-Navbar"><a onclick="Remov_Navbar(x)" href="#contact">تواصل معنا</a></li>
+        </ul>
+    </div >
+      <div class="d2">
+     <div class="mode"><i class="fa-solid fa-toggle-on"></i></div>
+    </div>
+    </div>
+    
+    <!-- <div class="slidImg" id="sliding">
+      
+        <div class="mainImg">
+          <div class="ci" id="main-title">
+            <h2>قم <span style="color:green;">بحجز</span> موعد</h2>
+            <h5> <i class="fa-solid fa-mobile-screen-button"></i> عند طبيبك من خلال هاتفك فقط </h5>
+            <p >يساعدك الموقع بيجاد طبيبك المناسب ومعرفة اوقات تواجدة و حجز موعد مسبق بضقطة زر</p>
+            <a  class="M-B" > اكتشف الاقسام <i class="fa-solid fa-grip"></i></a>
+          </div> 
+          
+        </div>
+    </div> -->
+    <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="n0.jpg" class="w-100"  alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="n9.jpg" class="w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="n3.png" class="w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+      <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="images/img1.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text"><h2>قم <span style="color:rgb(0, 0, 0);">بحجز</span> موعد</h2>
+            </span>
+                <h5 style="color:rgb(255, 255, 255);"> <i class="fa-solid fa-mobile-screen-button"></i> عند طبيبك من خلال هاتفك فقط </h5>
+                <p  class="d-main">يساعدك الموقع بيجاد طبيبك المناسب ومعرفة اوقات تواجدة و حجز موعد مسبق بضقطة زر</p>
+                <a  class="M-B" > اكتشف الاقسام <i class="fa-solid fa-grip"></i></a>            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/img2.png" alt="" class="image" />
+            <div class="image-data">
+              
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="images/img3.jpg" alt="" class="image" />
+            <div class="image-data">
+             
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+  
+      <!-- Swiper JS -->
+      <script src="JS/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        setInterval(Swiper,1000); 
+
+      </script>
+        <div class="contaner_information_bookings floaty">
+                <div class="">
+                    <ul class="speed-shert">
+                        <li><a href="">تفاصيل الحجز</a></li>
+                        <li><a href="">الاسعافات</a></li>
+                        <li><a href="">بحث</a></li>
+                    </ul>
+                </div>
+                <div class="info_cip">
+                    <div class="section1">
+                        <Ul class="UI-bookings">
+                            <li class="Ii-bookings"><span>7</span>: رقم الحجز <i class="fa-solid fa-list-ol icon-cip"></i> </li>
+                            <div class="Name-Dr-Hospital">
+                            <li class="Ii-bookings">  <span> اسم الطبيب:  </span> احمد محمد حميد <i class="fa-solid fa-user-doctor icon-cip"></i></li>
+                            <li class="Ii-bookings">عيادة الشفاء <i class="fa-regular fa-hospital icon-cip"></i> </li>
+                            </div>
+                        </Ul>
+                    </div>
+                    <div class="section2">
+                        <div class="Numper-Bookings">
+                            <li class="Ii-bookings border"><span>7</span> : عدد المراجعين الحاليين<i class="fa-solid fa-people-group not icon-cip"></i> </li>
+                            <li class="Ii-bookings border "><span>7</span> : عدد المراجعين المنتظرين <i class="fa-solid fa-people-group icon-cip"></i> </li>
+                            <li class="Ii-bookings border"><span>7</span> : رقم المراجع الحالي : <i class="fa-solid fa-person icon-cip"></i></li>
+                        </div>
+                    </div>
+                </div>
+            <!-- <div class="Icon_CIB" id="Icon_CIB"><i class="fa-solid fa-address-card"></i></div>
+            <div class="Info_CIB" id="Info_CIB">
+               <Ul class="UI-bookings">
+                <li class="Ii-bookings"><span>7</span>: رقم الحجز <i class="fa-solid fa-list-ol"></i> </li>
+                <div class="Name-Dr-Hospital">
+                <li class="Ii-bookings">  <span> اسم الطبيب:  </span> احمد محمد حميد <i class="fa-solid fa-user-doctor"></i></li>
+                <li class="Ii-bookings">عيادة الشفاء <i class="fa-regular fa-hospital"></i> </li>
+                </div>
+               
+                </Ul> -->
+            </div>
+
+    
+</body>
+<script src="js.js"></script>
+</html>
